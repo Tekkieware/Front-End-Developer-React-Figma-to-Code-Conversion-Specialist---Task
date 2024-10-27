@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .light-mode {
     background-color: var(--bg-color-light);
