@@ -13,6 +13,8 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
+    max-width: 100%;
+    overflow: hidden;
 }
 .light-mode {
     background-color: var(--bg-color-light);
@@ -43,13 +45,14 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: transparent;
     transition: width 0.3s ease-in-out;
     z-index: 1000;
     overflow-y: auto;
     border-right: 1px solid #F1F5F9;
     padding: 10px;
 }
+
+
 .sidebar.collapsed {
     width: 80px;
 }
@@ -564,6 +567,37 @@ td{
     color: inherit;
     font-size: 16px;
 }
+
+.bottom-tab{
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid #c1c3c5;
+    font-size: 14px;
+}
+
+.tab-item{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tab-active{
+    color: #8576FF;
+    border-top: 3px solid #8576FF;
+}
+
+.tab-image{
+    width: 24px;
+    height: 24px;
+}
 @media (max-width: 768px) {
     .sidebar {
         left: -250px;
@@ -631,5 +665,17 @@ td{
     }
     .sidebar{
         background-color: #fff;
+    }
+    .summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .active{
+        background-color: transparent ;
+    }
+    .bottom-tab{
+        display: flex;
     }
 }

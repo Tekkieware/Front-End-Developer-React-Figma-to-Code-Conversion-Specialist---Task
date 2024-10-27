@@ -29,6 +29,7 @@ collapseBtn.addEventListener("click", () => {
 const darkModeToggle = document.getElementById("darkModeToggle");
 const html = document.documentElement;
 const cardItems = document.getElementsByClassName("summary-item-header-text");
+const nav = document.getElementById("sidebar")
 
 const chartId = document.getElementById("eventsChart");
 const texts = document.querySelectorAll(
@@ -40,6 +41,8 @@ darkModeToggle.addEventListener("click", () => {
   html.classList.toggle("light-mode");
 
   if (html.classList.contains("light-mode")) {
+    nav.style.color = "#383544"
+    nav.style.backgroundColor ="white"
     texts.forEach((element) => {
       element.style.color = "#334155";
     });
@@ -51,6 +54,8 @@ darkModeToggle.addEventListener("click", () => {
     chartId.style.backgroundColor = "transparent";
     chartId.style.border = "border: 1px solid #F2F2F7";
   } else {
+    nav.style.color = "white"
+    nav.style.backgroundColor ="#383544"
     texts.forEach((element) => {
       element.style.color = "#fff";
     });

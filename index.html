@@ -1,376 +1,285 @@
 <!DOCTYPE html>
 <html lang="en" class="light-mode">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-          <img src="./assets//images/logo.png" class="logo" id="logo" alt="" />
-        </div>
-        <nav>
-          <a class="nav-item active"
-            ><img
-              class="icon-image"
-              title="Home"
-              src="./assets/icons/home.png"
-              alt=""
-            />
-            <span>Home</span></a
-          >
-          <a class="nav-item"
-            ><img
-              title="Events"
-              class="icon-image"
-              src="./assets/icons/events.png"
-              alt=""
-            />
-            <span>Events</span></a
-          >
-          <a class="nav-item"
-            ><img
-              title="Speakers"
-              class="icon-image"
-              src="./assets/icons/speakers.png"
-              alt=""
-            />
-            <span>Speakers</span></a
-          >
-          <a class="nav-item"
-            ><img
-              title="Reports"
-              class="icon-image"
-              src="./assets/icons/reports.png"
-              alt=""
-            />
-            <span>Reports</span></a
-          >
-          <a class="nav-item"
-            ><img
-              class="icon-image"
-              src="./assets/icons/notifications.png"
-              title="Notifications"
-              alt=""
-            /><span>Notifications</span>
-            <p class="notifications">3</p></a
-          >
-          <a class="nav-item"
-            ><img
-              class="icon-image"
-              src="./assets/icons/messages.png"
-              alt=""
-              title="Messages"
-            /><span>Messages</span></a
-          >
-          <a class="nav-item"
-            ><img
-              title="Settings"
-              class="icon-image"
-              src="./assets/icons/settings.png"
-              alt=""
-            /><span>Settings</span></a
-          >
-          <a class="nav-item" id="collapseBtn" title="Expand/Expand">
-            <img
-              class="smaller-icon-image"
-              src="./assets/icons/collapse.png"
-              alt=""
-            />
-            <span>Collapse</span>
-          </a>
-          <a class="nav-item" id="darkModeToggle">
-            <img
-              class="icon-image"
-              src="./assets/icons/switch.png"
-              alt=""
-              title="Toggle Mode"
-            /><span>Toggle Dark Mode</span>
-          </a>
-          <a class="nav-item"
-            ><img
-              class="bigger-icon-image"
-              src="./assets/icons/avatar.png"
-              alt=""
-              title="User information"
-            /><span
-              ><p>Rudra Devi</p>
-              <p class="item-email">rudra.devi@gmail.com</p></span
-            ></a
-          >
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="./assets//images/logo.png" class="logo" id="logo" alt="" />
       </div>
-      <div class="main-content" id="main-content">
-        <button class="hamburger" id="hamburger">
-          <img src="./assets/icons/hamburger.png" alt="" />
-        </button>
-        <header class="header">
-          <h1 class="header-text">Welcome! Here's your summary</h1>
-        </header>
-        <div class="summary">
-          <div class="summary-item">
-            <span class="summary-item-header"
-              ><h3 class="summary-item-header-text">Total Events</h3>
-              <img
-                class="summary-item-image"
-                src="./assets/icons/information.png"
-                alt=""
-            /></span>
-            <span class="summary-item-body"
-              ><p class="summary-item-text">100,000</p>
-              <span class="summary-item-body-text"
-                ><img
-                  class="summary-item-body-image"
-                  src="./assets/icons/arrow-up-right.png"
-                  alt="arrow-up-right"
-                />
-                <p>+5.0%</p></span
-              ></span
-            >
-          </div>
-          <div class="summary-item">
-            <span class="summary-item-header"
-              ><h3 class="summary-item-header-text">Active Speakers</h3>
-              <img
-                class="summary-item-image"
-                src="./assets/icons/information.png"
-                alt=""
-            /></span>
-            <span class="summary-item-body"
-              ><p class="summary-item-text">25</p>
-              <span class="summary-item-body-text"
-                ><img
-                  class="summary-item-body-image"
-                  src="./assets/icons/arrow-down-right.png"
-                  alt="arrow-down-right"
-                />
-                <p style="color: #f43f5e">-5.0%</p></span
-              ></span
-            >
-          </div>
-          <div class="summary-item">
-            <span class="summary-item-header"
-              ><h3 class="summary-item-header-text">Total Registrations</h3>
-              <img
-                class="summary-item-image"
-                src="./assets/icons/information.png"
-                alt=""
-            /></span>
-            <span class="summary-item-body"
-              ><p class="summary-item-text">300</p>
-              <span class="summary-item-body-text"
-                ><img
-                  class="summary-item-body-image"
-                  src="./assets/icons/arrow-up-right.png"
-                  alt="arrow-up-right"
-                />
-                <p>+5.0%</p></span
-              ></span
-            >
-          </div>
-          <div class="summary-item">
-            <span class="summary-item-header"
-              ><h3 class="summary-item-header-text">Total Revenue</h3>
-              <img
-                class="summary-item-image"
-                src="./assets/icons/information.png"
-                alt=""
-            /></span>
-            <span class="summary-item-body"
-              ><p class="summary-item-text">$500,000</p>
-              <span class="summary-item-body-text"
-                ><img
-                  class="summary-item-body-image"
-                  src="./assets/icons/arrow-up-right.png"
-                  alt="arrow-up-right"
-                />
-                <p>+5.0%</p></span
-              ></span
-            >
-          </div>
+      <nav>
+        <a class="nav-item"><img class="icon-image" title="Home" src="./assets/icons/home.png" alt="" />
+          <span>Home</span></a>
+        <a class="nav-item"><img title="Events" class="icon-image" src="./assets/icons/events.png" alt="" />
+          <span>Events</span></a>
+        <a class="nav-item"><img title="Speakers" class="icon-image" src="./assets/icons/speakers.png" alt="" />
+          <span>Speakers</span></a>
+        <a class="nav-item"><img title="Reports" class="icon-image" src="./assets/icons/reports.png" alt="" />
+          <span>Reports</span></a>
+        <a class="nav-item"><img class="icon-image" src="./assets/icons/notifications.png" title="Notifications"
+            alt="" /><span>Notifications</span>
+          <p class="notifications">3</p>
+        </a>
+        <a class="nav-item"><img class="icon-image" src="./assets/icons/messages.png" alt=""
+            title="Messages" /><span>Messages</span></a>
+        <a class="nav-item"><img title="Settings" class="icon-image" src="./assets/icons/settings.png"
+            alt="" /><span>Settings</span></a>
+        <a class="nav-item" id="collapseBtn" title="Expand/Expand">
+          <img class="smaller-icon-image" src="./assets/icons/collapse.png" alt="" />
+          <span>Collapse</span>
+        </a>
+        <a class="nav-item" id="darkModeToggle">
+          <img class="icon-image" src="./assets/icons/switch.png" alt="" title="Toggle Mode" /><span>Toggle Dark
+            Mode</span>
+        </a>
+        <a class="nav-item"><img class="bigger-icon-image" src="./assets/icons/avatar.png" alt=""
+            title="User information" /><span>
+            <p>Rudra Devi</p>
+            <p class="item-email">rudra.devi@gmail.com</p>
+          </span></a>
+      </nav>
+    </div>
+    <div class="main-content" id="main-content">
+      <button class="hamburger" id="hamburger">
+        <img src="./assets/icons/hamburger.png" alt="" />
+      </button>
+      <header class="header">
+        <h1 class="header-text">Welcome! Here's your summary</h1>
+      </header>
+      <div class="summary">
+        <div class="summary-item">
+          <span class="summary-item-header">
+            <h3 class="summary-item-header-text">Total Events</h3>
+            <img class="summary-item-image" src="./assets/icons/information.png" alt="" />
+          </span>
+          <span class="summary-item-body">
+            <p class="summary-item-text">100,000</p>
+            <span class="summary-item-body-text"><img class="summary-item-body-image"
+                src="./assets/icons/arrow-up-right.png" alt="arrow-up-right" />
+              <p>+5.0%</p>
+            </span>
+          </span>
         </div>
-        <h2 class="chart-carousel-title">Event Registrations per month</h2>
-        <div class="chart-carousel">
-          <div class="chart" id="eventsChart">
-            <canvas id="registrationChart" width="400" height="200"></canvas>
+        <div class="summary-item">
+          <span class="summary-item-header">
+            <h3 class="summary-item-header-text">Active Speakers</h3>
+            <img class="summary-item-image" src="./assets/icons/information.png" alt="" />
+          </span>
+          <span class="summary-item-body">
+            <p class="summary-item-text">25</p>
+            <span class="summary-item-body-text"><img class="summary-item-body-image"
+                src="./assets/icons/arrow-down-right.png" alt="arrow-down-right" />
+              <p style="color: #f43f5e">-5.0%</p>
+            </span>
+          </span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item-header">
+            <h3 class="summary-item-header-text">Total Registrations</h3>
+            <img class="summary-item-image" src="./assets/icons/information.png" alt="" />
+          </span>
+          <span class="summary-item-body">
+            <p class="summary-item-text">300</p>
+            <span class="summary-item-body-text"><img class="summary-item-body-image"
+                src="./assets/icons/arrow-up-right.png" alt="arrow-up-right" />
+              <p>+5.0%</p>
+            </span>
+          </span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item-header">
+            <h3 class="summary-item-header-text">Total Revenue</h3>
+            <img class="summary-item-image" src="./assets/icons/information.png" alt="" />
+          </span>
+          <span class="summary-item-body">
+            <p class="summary-item-text">$500,000</p>
+            <span class="summary-item-body-text"><img class="summary-item-body-image"
+                src="./assets/icons/arrow-up-right.png" alt="arrow-up-right" />
+              <p>+5.0%</p>
+            </span>
+          </span>
+        </div>
+      </div>
+      <h2 class="chart-carousel-title">Event Registrations per month</h2>
+      <div class="chart-carousel">
+        <div class="chart" id="eventsChart">
+          <canvas id="registrationChart" width="400" height="200"></canvas>
+        </div>
+        <div class="carousel" id="newsCarousel">
+          <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+          <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+          <div class="carousel-item active">
+            <img src="./assets/images/carousel-image1.jpg" alt="News Update 1" />
+            <div class="carousel-caption">
+              <h3 class="carousel-caption-header">Latest News & Updates</h3>
+              <p class="carousel-caption-text">
+                Turpis interdum nunc varius ornare dignissim pretium. Massa
+                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                Fringilla purus, erat fringilla tincidunt quisque non.
+                Pellentesque in ut tellus.
+              </p>
+              <div class="carousel-indicator">
+                <span class="carousel-indicator-item-active"></span>
+                <span class="carousel-indicator-item-inactive"></span>
+                <span class="carousel-indicator-item-inactive"></span>
+              </div>
+            </div>
           </div>
-          <div class="carousel" id="newsCarousel">
-            <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-            <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-            <div class="carousel-item active">
-              <img
-                src="./assets/images/carousel-image1.jpg"
-                alt="News Update 1"
-              />
-              <div class="carousel-caption">
-                <h3 class="carousel-caption-header">Latest News & Updates</h3>
-                <p class="carousel-caption-text">
-                  Turpis interdum nunc varius ornare dignissim pretium. Massa
-                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                  Fringilla purus, erat fringilla tincidunt quisque non.
-                  Pellentesque in ut tellus.
-                </p>
-                <div class="carousel-indicator">
-                  <span class="carousel-indicator-item-active"></span>
-                  <span class="carousel-indicator-item-inactive"></span>
-                  <span class="carousel-indicator-item-inactive"></span>
-                </div>
+          <div class="carousel-item">
+            <img src="./assets//images/carousel-image2.jpg" alt="News Update 3" />
+            <div class="carousel-caption">
+              <h3 class="carousel-caption-header">Latest News & Updates</h3>
+              <p class="carousel-caption-text">
+                Turpis interdum nunc varius ornare dignissim pretium. Massa
+                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                Fringilla purus, erat fringilla tincidunt quisque non.
+                Pellentesque in ut tellus.
+              </p>
+              <div class="carousel-indicator">
+                <span class="carousel-indicator-item-inactive"></span>
+                <span class="carousel-indicator-item-active"></span>
+                <span class="carousel-indicator-item-inactive"></span>
               </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="./assets//images/carousel-image2.jpg"
-                alt="News Update 3"
-              />
-              <div class="carousel-caption">
-                <h3 class="carousel-caption-header">Latest News & Updates</h3>
-                <p class="carousel-caption-text">
-                  Turpis interdum nunc varius ornare dignissim pretium. Massa
-                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                  Fringilla purus, erat fringilla tincidunt quisque non.
-                  Pellentesque in ut tellus.
-                </p>
-                <div class="carousel-indicator">
-                  <span class="carousel-indicator-item-inactive"></span>
-                  <span class="carousel-indicator-item-active"></span>
-                  <span class="carousel-indicator-item-inactive"></span>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets//images/carousel-image3.jpg"
-                alt="News Update 3"
-              />
-              <div class="carousel-caption">
-                <h3 class="carousel-caption-header">Latest News & Updates</h3>
-                <p class="carousel-caption-text">
-                  Turpis interdum nunc varius ornare dignissim pretium. Massa
-                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                  Fringilla purus, erat fringilla tincidunt quisque non.
-                  Pellentesque in ut tellus.
-                </p>
-                <div class="carousel-indicator">
-                  <span class="carousel-indicator-item-inactive"></span>
-                  <span class="carousel-indicator-item-inactive"></span>
-                  <span class="carousel-indicator-item-active"></span>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets//images/carousel-image3.jpg" alt="News Update 3" />
+            <div class="carousel-caption">
+              <h3 class="carousel-caption-header">Latest News & Updates</h3>
+              <p class="carousel-caption-text">
+                Turpis interdum nunc varius ornare dignissim pretium. Massa
+                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                Fringilla purus, erat fringilla tincidunt quisque non.
+                Pellentesque in ut tellus.
+              </p>
+              <div class="carousel-indicator">
+                <span class="carousel-indicator-item-inactive"></span>
+                <span class="carousel-indicator-item-inactive"></span>
+                <span class="carousel-indicator-item-active"></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="events-history">
-          <h2 class="events-history-caption">Events History</h2>
-          <div class="history-header">
-            <div class="history-header-group">
-              <input
-                type="search"
-                class="history-header-input-search"
-                placeholder="Search..."
-              />
-              <span class="history-header-input">
-                <select name="" id="" class="history-header-select">
-                  <option value="">Date</option>
-                </select>
-              </span>
+      </div>
+      <div class="events-history">
+        <h2 class="events-history-caption">Events History</h2>
+        <div class="history-header">
+          <div class="history-header-group">
+            <input type="search" class="history-header-input-search" placeholder="Search..." />
+            <span class="history-header-input">
+              <select name="" id="" class="history-header-select">
+                <option value="">Date</option>
+              </select>
+            </span>
 
-              <span class="history-header-input">
-                <select name="" id="" class="history-header-select">
-                  <option value="">Status</option>
-                </select>
-              </span>
+            <span class="history-header-input">
+              <select name="" id="" class="history-header-select">
+                <option value="">Status</option>
+              </select>
+            </span>
 
-              <span class="history-header-input">
-                <select name="" id="" class="history-header-select">
-                  <option value="">Name</option>
-                </select>
-              </span>
-              <p class="history-header-bold-text">Displaying 100 results</p>
-            </div>
-            <div class="history-header-group">
-              <p class="history-header-text">Sort:</p>
-              <span class="history-header-input">
-                <select name="" id="" class="history-header-select">
-                  <option value="">Most Recent</option>
-                </select>
-              </span>
-              <span class="history-header-options">
-                <img src="./assets/icons/dots-vertical.png" alt="" />
-              </span>
-              <span class="history-header-options">
-                <img
-                  class="history-header-options-image"
-                  src="./assets/icons/download.png"
-                  alt=""
-                />
-                Export
-              </span>
-            </div>
+            <span class="history-header-input">
+              <select name="" id="" class="history-header-select">
+                <option value="">Name</option>
+              </select>
+            </span>
+            <p class="history-header-bold-text">Displaying 100 results</p>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Event Name</th>
-                <th>Date</th>
-                <th>Speaker</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody id="eventsTable">
-              <!-- Table rows will be dynamically added here -->
-            </tbody>
-          </table>
-          <div class="history-footer">
-            <div class="history-footer-group" id="pagination"></div>
-            <div class="history-footer-group">
-              <p class="history-header-text">Show:</p>
-              <span class="history-header-input">
-                <select name="" id="" class="history-header-select">
-                  <option value="">5 Rows</option>
-                </select>
-              </span>
-            </div>
+          <div class="history-header-group">
+            <p class="history-header-text">Sort:</p>
+            <span class="history-header-input">
+              <select name="" id="" class="history-header-select">
+                <option value="">Most Recent</option>
+              </select>
+            </span>
+            <span class="history-header-options">
+              <img src="./assets/icons/dots-vertical.png" alt="" />
+            </span>
+            <span class="history-header-options">
+              <img class="history-header-options-image" src="./assets/icons/download.png" alt="" />
+              Export
+            </span>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Speaker</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="eventsTable">
+            <!-- Table rows will be dynamically added here -->
+          </tbody>
+        </table>
+        <div class="history-footer">
+          <div class="history-footer-group" id="pagination"></div>
+          <div class="history-footer-group">
+            <p class="history-header-text">Show:</p>
+            <span class="history-header-input">
+              <select name="" id="" class="history-header-select">
+                <option value="">5 Rows</option>
+              </select>
+            </span>
           </div>
         </div>
       </div>
     </div>
+    <div class="bottom-tab">
+      <a class="tab-item tab-active"><img class="tab-image" title="Home" src="./assets/icons/home.png" alt="" />
+        <span>Home</span></a>
 
-    <!-- Modal -->
-    <div id="eventModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 class="event-name" id="modalEventName"></h2>
-        <p class="event-date">
-          <strong>Date:</strong>
-          <span class="event-date" id="modalEventDate"></span>
-        </p>
-        <p class="event-description">
-          <strong>Description:</strong> <span id="modalEventDescription"></span>
-        </p>
-        <img src="./assets/icons/avatar group.png" alt="Speakers group" />
-        <p class="modal-text">3 Guest Speakers: Speaker name A,</p>
-        <p class="modal-text">Speaker name B, Speaker name C.</p>
-        <p class="modal-text">300 Attendees</p>
-        <div class="modal-buttons">
-          <button id="closeButton" class="close-button">Close</button>
-          <div class="modal-buttons-right">
-            <button class="delete-button">Delete</button>
-            <button class="mark-button">Mark as completed</button>
-          </div>
+        <a class="tab-item"><img class="tab-image" title="Home" src="./assets/icons/events.png" alt="" />
+          <span>Events</span></a>
+          <a class="tab-item"><img class="tab-image" title="Home" src="./assets/icons/events.png" alt="" />
+            <span>Home</span></a>
+            <a class="tab-item"><img class="tab-image" title="Home" src="./assets/icons/speakers.png" alt="" />
+              <span>Speakers</span></a>
+              <a class="tab-item"><img class="tab-image" title="Home" src="./assets/icons/reports.png" alt="" />
+                <span>Reports</span></a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="event-name" id="modalEventName"></h2>
+      <p class="event-date">
+        <strong>Date:</strong>
+        <span class="event-date" id="modalEventDate"></span>
+      </p>
+      <p class="event-description">
+        <strong>Description:</strong> <span id="modalEventDescription"></span>
+      </p>
+      <img src="./assets/icons/avatar group.png" alt="Speakers group" />
+      <p class="modal-text">3 Guest Speakers: Speaker name A,</p>
+      <p class="modal-text">Speaker name B, Speaker name C.</p>
+      <p class="modal-text">300 Attendees</p>
+      <div class="modal-buttons">
+        <button id="closeButton" class="close-button">Close</button>
+        <div class="modal-buttons-right">
+          <button class="delete-button">Delete</button>
+          <button class="mark-button">Mark as completed</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
