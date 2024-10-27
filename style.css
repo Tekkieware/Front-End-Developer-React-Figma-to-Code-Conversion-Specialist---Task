@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .light-mode {
     background-color: var(--bg-color-light);
@@ -38,6 +38,10 @@ body {
 
 .logo{
     height: 30px;
+}
+
+.hide{
+    display: none;
 }
 .sidebar {
     position: fixed;
@@ -677,5 +681,8 @@ td{
     }
     .bottom-tab{
         display: flex;
+    }
+    .hide{
+        display: block;
     }
 }
