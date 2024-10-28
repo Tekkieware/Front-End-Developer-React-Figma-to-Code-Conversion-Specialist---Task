@@ -605,6 +605,9 @@ td{
     height: 24px;
 }
 @media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
     .sidebar {
         left: -250px;
     }
