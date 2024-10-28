@@ -690,4 +690,7 @@ td{
     .hide{
         display: block;
     }
+    .chart-carousel{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }
